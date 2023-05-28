@@ -11,7 +11,7 @@
   <Description DefaultValue="Chiki descirption"/>
   <IconUrl DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/hello-world/outlook-hello-world/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/hello-world/outlook-hello-world/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://divagueame.github.io/addin/dist"/>
+  <SupportUrl DefaultValue="https://divagueame.github.io/addin"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
   </AppDomains>
@@ -105,7 +105,7 @@
         <bt:Image id="Icon.80x80" DefaultValue="https://officedev.github.io/Office-Add-in-samples/Samples/hello-world/outlook-hello-world/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://divagueame.github.io/addin/dist/index"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://divagueame.github.io/addin/index"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="CommandsGroup.Label" DefaultValue="CHiki5"/>
