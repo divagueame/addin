@@ -30,6 +30,6 @@ export default {
   },
   buildDir: 'nuxt-dist',
   router: {
-    base: '/'
+    base: '/addin'
   }
 }
