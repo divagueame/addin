@@ -51,7 +51,6 @@ export default {
   generate: {
   dir: 'docs',
   },
-  buildDir: 'nuxt-dist',
   router: {
     base: '/addin'
   }
