@@ -3,7 +3,29 @@ export default {
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static', // Global page headers: https://go.nuxtjs.dev/config-head head: { title: 'addin', htmlAttrs: { lang: 'en' }, meta: [ { charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }, { hid: 'description', name: 'description', content: '' }, { name: 'format-detection', content: 'telephone=no' } ], link: [ { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' } ], script: [ { innerHTML: ` window._historyCache = { replaceState: window.history.replaceState, pushState: window.history.pushState }; `, }, { src: "https://appsforoffice.microsoft.com/lib/1/hosted/office.js", }, { innerHTML: ` // And restore them window.history.replaceState = window._historyCache.replaceState; window.history.pushState = window._historyCache.pushState; `, }, ] }, // Global CSS: https://go.nuxtjs.dev/config-css css: [ ], // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins plugins: [ ], // Auto import components: https://go.nuxtjs.dev/config-components components: true,
+  target: 'static', // Global page headers: https://go.nuxtjs.dev/config-head
+
+  head: {
+  script: [
+        {
+          innerHTML: `
+        window._historyCache = {
+            replaceState: window.history.replaceState,
+            pushState: window.history.pushState
+        };
+     `,
+        },
+        {
+          src: "https://appsforoffice.microsoft.com/lib/1/hosted/office.js",
+        },
+        {
+          innerHTML: `
+        // And restore them
+        window.history.replaceState = window._historyCache.replaceState;
+        window.history.pushState = window._historyCache.pushState;
+     `,
+        }],
+  },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
