@@ -27,6 +27,6 @@ export default {
   },
   buildDir: 'nuxt-dist',
   router: {
-    base: '/dist'
+    base: '/docs'
   }
 }
