@@ -23,6 +23,7 @@ export default {
         // And restore them
         window.history.replaceState = window._historyCache.replaceState;
         window.history.pushState = window._historyCache.pushState;
+        window.Office.onReady(()=>{console.log("meow")});
      `,
         }],
   },
