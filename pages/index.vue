@@ -15,6 +15,14 @@ declare global {
 export default Vue.extend({
   name: 'IndexPage',
   setup() {
+
+    const logSelectedEmailId = ()=> {
+    console.log('Chiki')
+    // console.log(Office.context.mailbox.item.internetMessageId)
+    // console.log(Office.context.mailbox.item)
+}
+
+
     const waitForOfficeAvailability = () => {
       return new Promise<void>((resolve) => {
         const checkAvailability = () => {
@@ -33,7 +41,11 @@ export default Vue.extend({
 
       window.Office.onReady(() => {
         console.log('Office ready ');
+        console.log(window.Office.context.mailbox.item);
         // Code to be executed when the Office API is ready
+       // logSelectedEmailId()
+
+
       });
     });
   },
