@@ -37,6 +37,7 @@ export default {
   },
   router: {
     base: "/addin",
+    middleware: ["redirect"],
 
     extendRoutes(routes) {
       console.log(routes);
