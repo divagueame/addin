@@ -5,27 +5,12 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static', // Global page headers: https://go.nuxtjs.dev/config-head
 
+  plugins: [
+    {src: 'plugins/office.js', mode: 'client' }
+  ],
   head: {
   script: [
-        {
-          innerHTML: `
-        window._historyCache = {
-            replaceState: window.history.replaceState,
-            pushState: window.history.pushState
-        };
-     `,
-        },
-        {
-          src: "https://appsforoffice.microsoft.com/lib/1/hosted/office.js",
-        },
-        {
-          innerHTML: `
-        // And restore them
-        window.history.replaceState = window._historyCache.replaceState;
-        window.history.pushState = window._historyCache.pushState;
-        window.Office.onReady(()=>{console.log("meow")});
-     `,
-        }],
+],
   },
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -49,9 +34,9 @@ export default {
   build: {
   },
   generate: {
-  dir: 'docs',
+    dir: 'docs',
   },
   router: {
     base: '/addin'
-  }
+  },
 }
