@@ -1,6 +1,6 @@
 
 <template>
-<h1>Nuxt appp loaded</h1>
+<h1>Meow</h1>
 </template>
 
 <script lang="ts">
@@ -32,7 +32,7 @@ export default Vue.extend({
       await waitForOfficeAvailability();
 
       window.Office.onReady(() => {
-        console.log('Office ready');
+        console.log('Office ready ');
         // Code to be executed when the Office API is ready
       });
     });
