@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{134:function(o,c,e){"use strict";console.log("Carga office plugin"),c.a=function(o){o.app;var script=document.createElement("script");script.src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js",script.async=!1,document.head.appendChild(script)}},205:function(o,c,e){o.exports=e(206)}},[[205,3,1,4]]]);
