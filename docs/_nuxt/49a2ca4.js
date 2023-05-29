@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{291:function(n,t,e){"use strict";e.r(t);var o={mounted:function(){window.location.href="/addin/"}},c=e(61),component=Object(c.a)(o,(function(){return(0,this._self._c)("div",[this._v("Redirecting...")])}),[],!1,null,null,null);t.default=component.exports}}]);
